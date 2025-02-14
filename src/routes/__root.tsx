@@ -7,7 +7,7 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <div className="flex flex-col w-full justify-start items-center bg-sky-800 text-sky-100">
+    <div className="flex flex-col w-full justify-start items-center">
       <div className="w-full">
         <Header />
       </div>

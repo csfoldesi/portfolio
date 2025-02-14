@@ -4,6 +4,7 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 import "./index.css";
+import { ThemeProvider } from "./components/theme-provider";
 
 const router = createRouter({ routeTree });
 declare module "@tanstack/react-router" {
@@ -14,6 +15,8 @@ declare module "@tanstack/react-router" {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>
 );

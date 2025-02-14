@@ -11,7 +11,7 @@ const About = () => {
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
               Full Stack Developer
             </h1>
-            <p className="mx-auto max-w-[700px] text-sky-200 md:text-xl dark:text-gray-400">
+            <p className="mx-auto max-w-[700px]">
               Building digital experiences with modern technologies. Focused on creating elegant solutions to complex
               problems.
             </p>
