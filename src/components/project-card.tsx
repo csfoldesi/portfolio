@@ -1,7 +1,6 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Card, CardContent, CardFooter } from "./ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Thumbnail } from "./thumbnail";
 
 interface ProjectCardProps {
   title: string;
@@ -15,30 +14,10 @@ interface ProjectCardProps {
 export default function ProjectCard({ title, description, imageList, githubUrl, tags }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden">
-      <div className="relative aspect-video">
+      <div className="relative flex">
         <Card>
           <CardContent className="flex items-center justify-center p-6 cursor-grab group">
-            <Carousel opts={{ loop: true }}>
-              <CarouselContent>
-                {imageList.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <img
-                      src={image || "/placeholder.svg"}
-                      alt={title}
-                      className="object-cover transition-transform hover:scale-105"
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <div className="absolute inset-0 z-10 pointer-events-none flex items-center justify-between opacity-0 group-hover:opacity-100 transitiopn-all duration-300">
-                <div className="bg-white/70 rounded-full p-2">
-                  <ChevronLeft className="h-6 w-6 text-gray-800" />
-                </div>
-                <div className="bg-white/70 rounded-full p-2">
-                  <ChevronRight className="h-6 w-6 text-gray-800" />
-                </div>
-              </div>
-            </Carousel>
+            <Thumbnail url={imageList[0]} imageList={imageList} />
           </CardContent>
         </Card>
       </div>
