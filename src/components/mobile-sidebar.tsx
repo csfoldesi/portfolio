@@ -42,11 +42,6 @@ export const MobileSidebar = () => {
                 Tech Stack
               </a>
             </SheetClose>
-            <SheetClose>
-              <a href="#contact" className="transition-colors" onClick={(e) => handleAnchorClick(e, "contact")}>
-                Contact
-              </a>
-            </SheetClose>
           </nav>
         </div>
       </SheetContent>

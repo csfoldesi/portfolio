@@ -36,13 +36,12 @@ const Header = () => {
             <a href="#projects" className="transition-colors" onClick={(e) => smoothScroll(e, "tech-stack")}>
               Tech Stack
             </a>
-            <a href="#contact" className="transition-colors" onClick={(e) => smoothScroll(e, "contact")}>
-              Contact
-            </a>
           </nav>
         </div>
         <Button variant="destructive" className="ml-auto">
-          Resume
+          <a href="/cv/Csaba_Foldesi_CV_EN.pdf" target="_blank">
+            Resume
+          </a>
         </Button>
         <Button variant="ghost" onClick={toggleTheme} className="ml-4 mr-4">
           {theme === "light" ? <Moon /> : <Sun />}

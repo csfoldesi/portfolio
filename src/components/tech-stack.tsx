@@ -3,19 +3,19 @@ import { Card } from "./ui/card";
 const technologies = [
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"],
+    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "shadcn/ui", "Redux"],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    skills: [".NET Core", "ASP.NET", "MS SQL", "PostgreSQL", "Entity Framework", "RESTful API"],
   },
   {
     category: "DevOps",
-    skills: ["Docker", "AWS", "CI/CD", "Git", "Linux", "Nginx"],
+    skills: ["Docker", "AWS", "CI/CD", "Git", "Azure"],
   },
   {
     category: "Tools",
-    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"],
+    skills: ["Visual Studio", "VS Code", "Postman", "GitHub"],
   },
 ];
 
@@ -29,7 +29,7 @@ export default function TechStack() {
             {tech.skills.map((skill) => (
               <span
                 key={skill}
-                className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-sm font-medium ring-1 ring-inset text-muted-foreground">
                 {skill}
               </span>
             ))}

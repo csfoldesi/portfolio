@@ -29,7 +29,7 @@ export default function ProjectCard({ title, description, imageList, githubUrl, 
           {tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium ring-1 ring-inset ring-gray-500/10">
+              className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-sm font-medium ring-1 ring-inset text-muted-foreground">
               {tag}
             </span>
           ))}
