@@ -17,13 +17,13 @@ const About = () => {
             </p>
           </div>
           <div className="space-x-4">
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/csfoldesi" target="_blank">
               <Button variant="outline" size="icon" className="cursor-pointer">
                 <SiGithub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/csfoldesi" target="_blank">
               <Button variant="outline" size="icon" className="cursor-pointer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>

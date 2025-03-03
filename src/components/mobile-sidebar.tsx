@@ -26,7 +26,7 @@ export const MobileSidebar = () => {
         <SheetTitle />
         <SheetDescription />
         <div className="p-8 space-y-8">
-          <nav className="flex flex-col text-sm/8 font-medium">
+          <nav className="flex flex-col text-lg/8 font-medium">
             <SheetClose>
               <a href="#about" className="transition-colors" onClick={(e) => handleAnchorClick(e, "about")}>
                 About
@@ -35,6 +35,11 @@ export const MobileSidebar = () => {
             <SheetClose>
               <a href="#projects" className="transition-colors" onClick={(e) => handleAnchorClick(e, "projects")}>
                 Projects
+              </a>
+            </SheetClose>
+            <SheetClose>
+              <a href="#projects" className="transition-colors" onClick={(e) => handleAnchorClick(e, "tech-stack")}>
+                Tech Stack
               </a>
             </SheetClose>
             <SheetClose>

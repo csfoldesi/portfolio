@@ -33,6 +33,9 @@ const Header = () => {
             <a href="#projects" className="transition-colors" onClick={(e) => smoothScroll(e, "projects")}>
               Projects
             </a>
+            <a href="#projects" className="transition-colors" onClick={(e) => smoothScroll(e, "tech-stack")}>
+              Tech Stack
+            </a>
             <a href="#contact" className="transition-colors" onClick={(e) => smoothScroll(e, "contact")}>
               Contact
             </a>
